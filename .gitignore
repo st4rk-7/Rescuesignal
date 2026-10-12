@@ -1,0 +1,5 @@
+# Shared repo = the common guide only. Everything else stays local.
+/*
+!/.gitignore
+!/README.md
+!/step_by_step_plan.md
