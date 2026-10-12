@@ -1,5 +1,11 @@
-# Shared repo = the common guide only. Everything else stays local.
+# Shared repo = the common guide + code + results. Data, notes and documents stay local.
 /*
 !/.gitignore
 !/README.md
 !/step_by_step_plan.md
+!/notebooks/
+!/results/
+__pycache__/
+.ipynb_checkpoints/
+# full test-event predictions repeat the HumAID tweet texts (dataset licence); regenerate with notebooks/phase7.py
+results/final/final_predictions.tsv
