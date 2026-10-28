@@ -1,0 +1,19 @@
+<frozen site>:101: RuntimeWarning: Unexpected value in sys.prefix, expected /home/st4rk/Projects/Academic/5th semester/Rescuesignal/.venv, got /home/st4rk/Projects/Academic/5th semester/Rescuesignal/notebooks/../.venv
+<frozen site>:101: RuntimeWarning: Unexpected value in sys.exec_prefix, expected /home/st4rk/Projects/Academic/5th semester/Rescuesignal/.venv, got /home/st4rk/Projects/Academic/5th semester/Rescuesignal/notebooks/../.venv
+done in 220s
+                            mean    std
+model         C    min_df              
+LinearSVM+bal 0.1  2       0.648  0.045
+                   5       0.650  0.044
+              1.0  2       0.641  0.052
+                   5       0.630  0.046
+              10.0 2       0.612  0.049
+                   5       0.589  0.044
+LogReg+bal    0.1  2       0.573  0.063
+                   5       0.585  0.059
+              1.0  2       0.629  0.057
+                   5       0.631  0.053
+              10.0 2       0.640  0.053
+                   5       0.632  0.051
+
+reproduces 5.2: 0.641 0.629
