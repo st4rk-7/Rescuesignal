@@ -1,0 +1,39 @@
+<frozen site>:101: RuntimeWarning: Unexpected value in sys.prefix, expected /home/st4rk/Projects/Academic/5th semester/Rescuesignal/.venv, got /home/st4rk/Projects/Academic/5th semester/Rescuesignal/notebooks/../.venv
+<frozen site>:101: RuntimeWarning: Unexpected value in sys.exec_prefix, expected /home/st4rk/Projects/Academic/5th semester/Rescuesignal/.venv, got /home/st4rk/Projects/Academic/5th semester/Rescuesignal/notebooks/../.venv
+LinearSVM A_tfidf done in 9s
+LinearSVM B_feats done in 7s
+LinearSVM C_both done in 13s
+LogReg A_tfidf done in 38s
+LogReg B_feats done in 4s
+LogReg C_both done in 67s
+MultinomialNB A_tfidf done in 2s
+MultinomialNB B_feats done in 3s
+MultinomialNB C_both done in 5s
+DecisionTree A_tfidf done in 32s
+DecisionTree B_feats done in 3s
+DecisionTree C_both done in 42s
+RandomForest A_tfidf done in 409s
+RandomForest B_feats done in 33s
+RandomForest C_both done in 372s
+
+Macro-F1, mean ± SD over 11 dev events:
+variant              A_tfidf        B_feats         C_both
+model                                                     
+DecisionTree   0.527 ± 0.056  0.344 ± 0.045  0.526 ± 0.065
+LinearSVM      0.641 ± 0.052  0.459 ± 0.035  0.644 ± 0.049
+LogReg         0.629 ± 0.057  0.452 ± 0.035  0.641 ± 0.040
+MultinomialNB  0.421 ± 0.065  0.275 ± 0.067  0.396 ± 0.072
+RandomForest   0.586 ± 0.076  0.427 ± 0.043  0.593 ± 0.061
+
+per-label F1 change, C (both) minus A (TF-IDF only):
+model                                   DecisionTree  LinearSVM  LogReg  MultinomialNB  RandomForest
+caution_and_advice                            -0.030      0.001   0.006         -0.136         0.018
+displaced_people_and_evacuations              -0.032      0.007  -0.034         -0.069        -0.057
+infrastructure_and_utility_damage             -0.025      0.006   0.005         -0.001         0.026
+not_humanitarian                              -0.000      0.004   0.019          0.000         0.011
+other_relevant_information                     0.013      0.007   0.024         -0.010         0.010
+requests_or_urgent_needs                       0.004     -0.002   0.008          0.000        -0.007
+rescue_volunteering_or_donation_effort         0.014     -0.001  -0.003         -0.030         0.004
+sympathy_and_support                           0.010     -0.002  -0.001         -0.006         0.009
+injured_or_dead_people                         0.013      0.005   0.007         -0.007         0.002
+missing_or_found_people                        0.041      0.053   0.288          0.000         0.084
